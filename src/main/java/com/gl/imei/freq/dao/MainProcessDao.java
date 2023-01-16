@@ -30,8 +30,8 @@ public class MainProcessDao {
 				@Override
 				public ImeiDupDb extractData(ResultSet rs) throws SQLException, DataAccessException {
 					ImeiDupDb imeiDupDb = new ImeiDupDb();
-					String tac="";
-					String tacStatus="";
+				//	String tac="";
+				//	String tacStatus="";
 					while(rs.next()) {
 						imeiDupDb.setMsisdnCount(rs.getLong("count"));
 						imeiDupDb.setImei(rs.getString("imei"));
